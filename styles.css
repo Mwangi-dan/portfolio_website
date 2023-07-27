@@ -15,7 +15,6 @@ html, body {
 .wrapper {
     max-width: 100%;
     margin: 0 auto;
-    margin-bottom: 1rem;
 }
 
 #container {
@@ -55,10 +54,12 @@ header .nav {
     padding-right: 0.6rem;
     justify-content: space-between;
     text-transform: uppercase;
+    border: #827c7c 0.1rem solid;
 }
 
 .header .menu a:hover {
     color: #debaba;
+    background-color: #605353;
 }
 
 .hero {
@@ -197,6 +198,7 @@ header .nav {
     text-align: center;
     align-items: center;
     max-height: 100%;
+    text-transform: uppercase;
 }
 
 .banner h1 {
@@ -237,4 +239,66 @@ header .nav {
     text-align: center;
     align-items: center;
     max-height: 100%;
+}
+
+/* Make contents align side by side */
+.links {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.links a {
+    text-align: center;
+}
+
+.link-card {
+    max-width: 100%;
+
+}
+
+
+.link-card img:hover {
+    transform: scale(1.01);
+    cursor: pointer;
+    transition: .3s ease-in-out;
+    opacity: 0.6;
+}
+
+footer {
+    background-color: black;
+    max-width: 100%;
+    height: 10rem;
+}
+
+.socials {
+    display: flex;
+    color: white;
+    font-size: 2rem;
+    align-items: center;
+    justify-content: center;
+    gap: 5rem;
+    margin: 0 auto;
+}
+
+.socials p a {
+    text-decoration: none;
+    color: white;
+}
+
+.socials p a:hover {
+    color: #debaba;
+}
+.socials p {
+    padding: 2rem;
+}
+
+.state p {
+    color: white;
+
+}
+
+.end {
+    text-align: center;
 }
