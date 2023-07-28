@@ -10,6 +10,6 @@ visualsButton.addEventListener('click', () => {
     } else {
         visuals.style.display = 'none';
         visualsBanner.style.display = 'none';
-        visualsButton.innerHTML = 'Click to view visual projects';
+        visualsButton.innerHTML = 'Click to view visual arts';
     }
 });

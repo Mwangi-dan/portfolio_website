@@ -471,10 +471,19 @@ footer {
 
     
 
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 440px) {
     .hero-image {
         position: relative;
         left: 1rem;
+    }
+
+    .screen {
+        width: 90vw;
+        margin: 0.5rem auto;
+    }
+
+    .card {
+        columns: 3 0.2rem;
     }
 
     .paragraph {
