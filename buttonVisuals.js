@@ -1,15 +1,13 @@
-const visualsButton = document.querySelector('.open-btn');
+const visualsButton = document.querySelector('.btn .open-btn');
 const visuals = document.querySelector('.screen');
 const visualsBanner = document.querySelector('.bannerv');
 
+let isVisualsOpen = false;
+
 visualsButton.addEventListener('click', () => {
-    if (visuals.style.display === 'none') {
-        visuals.style.display = 'block';
-        visualsBanner.style.display = 'flex';
-        visualsButton.innerHTML = 'Close';
-    } else {
-        visuals.style.display = 'none';
-        visualsBanner.style.display = 'none';
-        visualsButton.innerHTML = 'Click to view visual arts';
-    }
+  isVisualsOpen = !isVisualsOpen; // Toggle the state on each click
+
+  visuals.style.display = isVisualsOpen ? 'block' : 'none';
+  visualsBanner.style.display = isVisualsOpen ? 'flex' : 'none';
+  visualsButton.innerHTML = isVisualsOpen ? 'Collapse' : 'Open Gallery';
 });

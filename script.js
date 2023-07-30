@@ -7,7 +7,7 @@ const funFacts = [
     "I'm passionate about photography",
     'I love to travel',
     'I enjoy reading',
-    'I once nearly drowned',
+    'I am a good swimmer',
     'I am subtly competitive',
     "I'm a recovering introvert",
     'I love the Hunger Games Franchise',
