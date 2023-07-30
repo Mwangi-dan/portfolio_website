@@ -9,10 +9,11 @@ const funFacts = [
     'I enjoy reading',
     'I am a good swimmer',
     'I am subtly competitive',
-    "I'm a recovering introvert",
     'I love the Hunger Games Franchise',
     'I love to sing',
-    'I can learn really fast'
+    'I can learn really fast',
+    'I love space and universe-related content',
+    'I make delicious meals (sometimes)'
 ];
 
 const funFactButton = document.querySelector('#fun-fact-btn');
