@@ -165,7 +165,7 @@ header .nav {
 }
 
 .screen {
-    width: 70vw;
+    width: 80vw;
     margin: 1rem auto;
     margin-bottom: 1rem;
 }
@@ -474,6 +474,10 @@ footer {
         margin: 1rem;
     }
 
+    .screen {
+        width: 90vw;
+    }
+
 
 
 }
@@ -533,5 +537,9 @@ footer {
     .end {
         padding: 1rem;
         font-size: 0.7rem;
+    }
+
+    .screen {
+        width: 90vw;
     }
 }
