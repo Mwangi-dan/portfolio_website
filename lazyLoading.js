@@ -1,3 +1,7 @@
+function isMobileDevice() {
+    return window.matchMedia('(max-width: 600px)').matches; // Change the breakpoint as needed
+}
+
 function lazyLoadImages() {
     const images = document.querySelectorAll('.screen img[loading="lazy"]');
     
@@ -18,7 +22,10 @@ function lazyLoadImages() {
     }, options);
     
     images.forEach(img => imageObserver.observe(img));
-  }
+}
   
   // Call the function to start lazy loading the images
-  lazyLoadImages();
+  
+  if (!isMobileDevice()){
+    lazyLoadImages();
+  }
