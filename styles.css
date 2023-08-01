@@ -129,7 +129,7 @@ header .nav {
     align-items: center;
     padding: 1rem;
     width: 100vw;
-    height: 15rem;
+    max-height: 15rem;
     justify-content: center;
 
 }
@@ -195,7 +195,7 @@ header .nav {
     border-radius: 3rem;
     border: gray 0.1rem solid;
     cursor: pointer;
-    font-size: 1rem;
+    font-size: 1.5rem;
     margin: 1rem auto;
     color: black;
 }
@@ -339,29 +339,31 @@ header .nav {
 footer {
     background-color: black;
     max-width: 100%;
-    height: 10rem;
+    height: max-content;
+    background-image: url('images/My_gallery/Banner\ \(1\).jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-position-y: -20rem;
 }
 
 .socials {
-    display: flex;
-    color: white;
-    font-size: 2rem;
-    align-items: center;
-    justify-content: center;
-    gap: 3rem;
+    display: grid;
+    width: 80vw;
     margin: 0 auto;
+    place-items: center;
 }
 
-.socials p a {
-    text-decoration: none;
-    color: rgb(131, 84, 46);
+/* Position it at the center if the screen*/
+.socials img {
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    padding: 0.5rem;
 }
 
-.socials p a:hover {
-    color: #debaba;
-}
-.socials p {
-    padding: 2rem;
+.socials a {
+    max-width: 5rem;
 }
 
 .state p {
@@ -479,7 +481,9 @@ footer {
         width: 90vw;
     }
 
-
+    footer {
+        background-image: none;
+    }
 
 }
 
@@ -543,4 +547,9 @@ footer {
     .screen {
         width: 90vw;
     }
+
+    .socials a img{
+        max-width: 90%;
+    }
+
 }
